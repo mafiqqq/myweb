@@ -6,13 +6,16 @@ nav {
   padding: 50px 0;
   box-shadow: 0px 5px 0px #dedede;
 }
+
 nav ul {
   list-style: none;
   text-align: center;
 }
+
 nav ul li {
   display: inline-block;
 }
+
 nav ul li a {
   display: block;
   padding: 15px;
@@ -22,11 +25,13 @@ nav ul li a {
   text-transform: uppercase;
   margin: 0 10px;
 }
+
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
   transition: all .5s;
 }
+
 nav ul li a:hover {
   color: #555;
 }
@@ -34,12 +39,14 @@ nav ul li a:hover {
 
 /* SHIFT */
 nav.navbar ul li a {
-  position:relative;
+  position: relative;
   z-index: 1;
 }
+
 nav.navbar ul li a:hover {
   color: #91640F;
 }
+
 nav.navbar ul li a:after {
   display: block;
   position: absolute;
@@ -57,6 +64,7 @@ nav.navbar ul li a:after {
   opacity: 0;
   z-index: -1;
 }
+
 nav.navbar ul li a:hover:after {
   opacity: 1;
   visibility: visible;
@@ -65,56 +73,67 @@ nav.navbar ul li a:hover:after {
 
 /* About me styles */
 
-.about{
+.about {
   padding: 1em;
   position: relative;
- }
- .about h1{
-  color:#F97300;
- }
- .about img{
+}
+
+.about h1 {
+  color: #F97300;
+}
+
+.about img {
   height: 100%;
   width: 100%;
   border-radius: 50%
- }
- .about span{
+}
+
+.about span {
   display: block;
   color: #888;
   position: absolute;
-  left: 115px;
- }
- .about .desc{
+  left: 85px;
+  margin-top: 10px;
+}
+
+.about .desc {
   padding: 2em;
-  border-left:4px solid #10828C;
- }
- .about .desc h3{
+  border-left: 4px solid #10828C;
+}
+
+.about .desc h3 {
   color: #10828C;
- }
- .about .desc p{
-  line-height:2;
-  color:#888;
- }
+}
 
-
-
-
-body, html {
+.about .desc p {
+  line-height: 2;
+  color: #888;
+}
+body {
+ padding-top: 10px;
+}
+body,
+html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
   position: relative;
-  opacity: 0.65;
+  opacity: 0.95;
   background-position: center;
   background-size: cover;
 
 }
+
 .bgimg-1 {
   background-image: url("../image/img-background-1.jpg");
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .bgimg-2 {
@@ -127,24 +146,33 @@ body, html {
   min-height: 300px;
 }
 
+.bgimg-4 {
+  background-image: url("../image/img-background-4.jpg");
+  min-height: 300px;
+}
+
+.blog .card-text {
+  color: #000;
+}
 .caption {
   position: absolute;
   left: 0;
   top: 50%;
   width: 100%;
   text-align: center;
-  color: rgb(0, 4, 255);
+  color: #10828C;
 }
 
 .caption span.border {
-  background-color: rgb(241, 196, 15);
+  background-color: #292825;
   color: #fff;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
 }
 
-h3 , h4{
+h3,
+h4, h5 {
   letter-spacing: 5px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
@@ -152,84 +180,110 @@ h3 , h4{
 }
 
 /* Education Styles */
-.blog{
+.blog {
   margin: 4em 0;
-  position: relative; 
- }
- .blog h1{
-  color:#F97300;
-  margin: 2em; 
- }
- .blog .card{
-  box-shadow: 0 0 20px #ccc;
- }
- 
- .blog .card img{
-  width: 100%;
-  height: 100%;
-  
- }
- .blog .card-title{
-  color:#F97300;
-   
- }
- .blog .card-body{
-  padding: 1em;
- }
+  position: relative;
+}
 
- /* Skills style */
+.blog h1 {
+  color: #F97300;
+  margin: 2em;
+}
+
+.blog .card {
+  box-shadow: 0 0 20px #F97300;
+}
+
+.blog .card img {
+  position: relative;
+  float: center;
+  width: 100px;
+  height: 100px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+.blog .card-title {
+  color: #F97300;
+
+}
+
+.blog .card-body {
+  padding: 1em;
+}
+
+/* Skills style */
 .skill-title {
   margin-bottom: 10px;
 }
 
+/* Hobby style */
+
+.iframe .video {
+  left: 85px;
+  padding: 2em;
+}
+
 /* Contact Me Style */
-.contact-form{
+.contact-form {
   background: #fff;
   margin-top: 1%;
   margin-bottom: 1%;
   width: 70%;
 }
 
-.contact-form form{
+.contact-form form {
   padding: 5%;
 }
-.contact-form form .row{
+
+.contact-form form .row {
   margin-bottom: -7%;
 }
-.contact-form h3{
+
+.contact-form h3 {
   margin-bottom: 8%;
   margin-top: -10%;
   text-align: center;
   color: #F1C40F;
 }
+
 .contact-form .btnContact {
   width: 50%;
   border: none;
   border-radius: 1rem;
   padding: 1.5%;
-  background: #f1c40c;
+  background: #10828C;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
 }
-.btnContactSubmit
-{
+
+.btnContactSubmit {
   width: 50%;
   border-radius: 1rem;
   padding: 1.5%;
   color: #fff;
-  background-color: #F1C40F;
+  background-color: #10828C;
   border: none;
   cursor: pointer;
 }
 
 .footer {
-  padding: 10px; /* Some padding */
-  text-align: center; /* Center text*/
-  background: #ddd; /* Grey background */
+  padding: 5px;
+  /* Some padding */
+  text-align: center;
+  /* Center text*/
+  background: #ddd;
+  /* Grey background */
+  max-height: 100px;
 }
 
-.page-footer img{
+.page-footer img {
   height: 50px;
   width: 50px;
   position: relative;
